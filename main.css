@@ -16,6 +16,7 @@ Box-Shadow: gray;
 /* BASIC STYLE */
 body {color:#666;font-size:16px;}
 h1 {color:#f06798;}
+a {color:#4fc6e0;}
 .icon-bar { background-color:white; }
 .container {
   padding-left: 10%;
@@ -60,6 +61,12 @@ a.navbar-brand {padding-right: 1em;}
   position:relative;
   margin-bottom: 0;
   border-radius:0 !important;
+}
+.navbar-nav>li>a {
+	font-weight: 100;
+  text-transform: uppercase;
+  padding-right:.5em;
+	font-size:1em;
 }
 .nav>li>a:hover, .nav>li>a:focus {
   color:#e6e6e6;
@@ -111,6 +118,8 @@ a.navbar-brand {padding-right: 1em;}
   left:2em;
   top:0em;
   box-shadow: 0 0 3px #666;
+  font-family: 'helveticaneue-condensedbold','helveticaneue',arial,sans-serif;
+	text-transform: uppercase;
 }
 .login-cont {
   text-align: center;
@@ -443,14 +452,16 @@ Tablets (≥768px)
 Phones (<768px)
 */
 
+@media (max-width: 1200px) and (min-width:992px){
+  .image-description {margin-top: 30px;}
+  .project-container { padding: .5em;}
+  .timeline-hln {width: 45em;}
+
+}
+
 @media (max-width: 991px) and (min-width:768px){
-  .navbar-nav>li>a {
-    padding-left:.6em;
-    padding-right:.6em;
-    padding-top: 1.2em;
-  }
   .navbar { padding-top: 1em; }
-  .logo { width:120px; }  
+  .logo { display:none; }  
   .project-container { padding: .5em;}
   .image-description {
     position: static;
@@ -513,12 +524,7 @@ Phones (<768px)
 
 }
 
-@media (max-width: 1200px) and (min-width:992px){
-  .image-description {margin-top: 30px;}
-  .project-container { padding: .5em;}
-  .timeline-hln {width: 45em;}
 
-}
 
 @media (max-width: 992px) and (min-width:768px){
 
