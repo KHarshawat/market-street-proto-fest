@@ -52,6 +52,7 @@ a:hover {
   font-weight:normal;
   font-size:1.33em;
 }
+.lead {font-size: }
 
 /* ========== NAVBAR ========== */
 a.navbar-brand {padding-right: 1em;}
